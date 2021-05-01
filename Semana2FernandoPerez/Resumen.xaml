@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana2FernandoPerez.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition  Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                </Grid>
+
+
+                <Label Text="Usuario Conectado:" Grid.Row="0" Grid.Column="0"/>
+
+                <Entry x:Name="txtConectado"  
+                                      
+                   Grid.Row="0"
+                   Grid.Column="1"
+               FontSize="15"
+               IsEnabled="False">
+                </Entry>
+
+            <Label Text="Nombre de estudiante:"
+                                      
+                   Grid.Row="0"
+                   Grid.Column="2"
+               FontSize="20"
+                   TextColor="Blue"
+               IsEnabled="False"/>
+            
+            <Entry x:Name="txtnombre"  
+                                      
+                   Grid.Row="0"
+                   Grid.Column="3"
+               FontSize="20"
+               IsEnabled="False">
+            </Entry>
+            <Label Text="Debe pagar 3  cuotas de:"
+                                      
+                   Grid.Row="0"
+                   Grid.Column="4"
+               FontSize="20"
+               TextColor="Blue"
+               IsEnabled="False"/>
+            
+            <Entry x:Name="txtcuotas"  
+                                      
+                   Grid.Row="0"
+                   Grid.Column="5"
+               FontSize="20"
+               IsEnabled="False">
+            </Entry>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

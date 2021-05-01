@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Semana2FernandoPerez.MainPage">
+
+    <StackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition  Width="*" />
+            </Grid.ColumnDefinitions>
+
+        </Grid>
+        
+
+        <Label Text="Usuario Conectado:" Grid.Row="0" Grid.Column="0"/>
+
+        <Entry x:Name="txtConectado"  
+                                      
+                   Grid.Row="0"
+                   Grid.Column="1"
+               FontSize="15"
+               IsEnabled="False">
+        </Entry>
+        <Frame BackgroundColor="#2196F3" Padding="10" CornerRadius="0">
+
+            <Label Text="Registro de estudiantes:" HorizontalTextAlignment="Start" TextColor="Black" FontSize="20"/>
+        </Frame>
+        <Entry x:Name="txtNombre"  
+                   Placeholder="Nombre estudiante:"                    
+                   Grid.Row="1"
+                   Grid.Column="1">
+        </Entry>
+        <Entry x:Name="txtMonto"  
+                   Placeholder="Monto Inicial: "                    
+                   Grid.Row="2"
+                   Grid.Column="1"
+                   Keyboard="Numeric">
+        </Entry>
+        
+            <Entry x:Name="txtcuotas" Placeholder="Valor cuota" IsEnabled="False"/>
+        
+            <Button x:Name="btnSumar" Text="Calcular" Clicked="btnSumar_Clicked"/>
+            <Button x:Name="btnGuardar" Text="Guardar" Clicked="btnGuardar_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>
